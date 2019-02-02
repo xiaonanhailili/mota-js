@@ -1781,7 +1781,7 @@ events.prototype.setVolume = function (value, time, callback) {
         if (core.isset(core.musicStatus.playingBgm)) {
             core.material.bgms[core.musicStatus.playingBgm].volume = value;
         }
-        core.musicStatus.gainNode.gain.value = value;
+        // core.musicStatus.gainNode.gain.value = value;
     }
 
     if (!core.isset(time) || time<100) {
