@@ -369,8 +369,8 @@ maps.prototype.drawBlock = function (block, animate, dx, dy) {
 
     // --- 在界面外的动画不绘制
     if ((animate||0)>1 && (block.event.animate||0)>1 &&
-        (block.x * 32 + dx < core.bigmap.offsetX - 64 || block.x * 32 + dx > core.bigmap.offsetX + 416 + 32
-            || block.y * 32 + dy < core.bigmap.offsetY - 64 || block.y * 32 + dy > core.bigmap.offsetY + 416 + 32 + 16)) {
+        (block.x * 32 + dx < core.bigmap.offsetX - 64 || block.x * 32 + dx > core.bigmap.offsetX + 480 + 32
+            || block.y * 32 + dy < core.bigmap.offsetY - 64 || block.y * 32 + dy > core.bigmap.offsetY + 480 + 32 + 16)) {
         return;
     }
 

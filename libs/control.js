@@ -73,8 +73,8 @@ control.prototype.setRequestAnimationFrame = function () {
                 // Global Autotile Animate
                 core.status.autotileAnimateObjs.blocks.forEach(function (block) {
                     // ------ 界面外的动画不绘制
-                    if (block.x * 32 < core.bigmap.offsetX - 64 || block.x * 32 > core.bigmap.offsetX + 416 + 32
-                            || block.y * 32 < core.bigmap.offsetY - 64 || block.y * 32 > core.bigmap.offsetY + 416 + 32 + 16) {
+                    if (block.x * 32 < core.bigmap.offsetX - 64 || block.x * 32 > core.bigmap.offsetX + 480 + 32
+                            || block.y * 32 < core.bigmap.offsetY - 64 || block.y * 32 > core.bigmap.offsetY + 480 + 32 + 16) {
                         return;
                     }
 
